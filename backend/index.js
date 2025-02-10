@@ -3,7 +3,7 @@ import cors from 'cors'
 
 const app = express();
 app.use(cors({
-    origin: "https://learning-deployment-khaki.vercel.app",
+    origin: "https://learning-deployment-khaki.vercel.app/",
     credentials: true
 }));
 
