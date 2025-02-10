@@ -2,10 +2,16 @@ import express from 'express';
 import cors from 'cors'
 
 const app = express();
+// app.use(cors({
+//     origin: "https://learning-deployment-khaki.vercel.app/",
+//     credentials: true
+// }));
+
 app.use(cors({
-    origin: "https://learning-deployment-khaki.vercel.app/",
+    origin: "*",  // Allow requests from any frontend
     credentials: true
 }));
+
 
 // app.get('/', (req, res) =>{
 //     res.send('Server is ready');
