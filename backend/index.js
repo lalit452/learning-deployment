@@ -2,7 +2,10 @@ import express from 'express';
 import cors from 'cors'
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: "https://learning-deployment-khaki.vercel.app/",
+    credentials: true
+}));
 
 // app.get('/', (req, res) =>{
 //     res.send('Server is ready');
